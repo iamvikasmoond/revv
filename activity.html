@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Activity</title>
+  <link rel="stylesheet" href="css/activity.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body class="class_oneonn_activity_body">
+  <div class="class_oneonn_activity_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_activity_header">
+      <h1 class="class_oneonn_activity_title">Activity</h1>
+      <div class="class_oneonn_activity_icons">
+        <button class="class_oneonn_activity_iconbtn" title="Help">
+          <span class="material-symbols-outlined">help_outline</span>
+        </button>
+        <button class="class_oneonn_activity_iconbtn" title="Notifications">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="class_oneonn_activity_dot"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Active Rides -->
+    <section id="id_oneonn_activity_activeSection" class="class_oneonn_activity_section">
+      <h2 class="class_oneonn_activity_subtitle">Active Rides</h2>
+      <div id="id_oneonn_activity_activeList" class="class_oneonn_activity_list"></div>
+    </section>
+
+    <!-- Past Rides -->
+    <section id="id_oneonn_activity_pastSection" class="class_oneonn_activity_section">
+      <h2 class="class_oneonn_activity_subtitle">Past Rides</h2>
+      <div id="id_oneonn_activity_pastList" class="class_oneonn_activity_list"></div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="class_oneonn_activity_bottomnav">
+      <a href="home.html" class="class_oneonn_activity_navlink">
+        <span class="material-symbols-outlined">home</span>
+        <span>Home</span>
+      </a>
+      <a href="activity.html" class="class_oneonn_activity_navlink active">
+        <span class="material-symbols-outlined">receipt_long</span>
+        <span>Activity</span>
+      </a>
+      <a href="profile.html" class="class_oneonn_activity_navlink">
+        <span class="material-symbols-outlined">person</span>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="scripts/activity.js"></script>
+</body>
+</html>

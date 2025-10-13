@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body class="class_oneonn_profile_body">
+  <div class="class_oneonn_profile_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_profile_header">
+      <h1 class="class_oneonn_profile_title">Profile</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="class_oneonn_profile_main">
+      <div class="class_oneonn_profile_userbox">
+        <div class="class_oneonn_profile_avatar">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpse2azF9d5O4NM10I2ngp_7BX-0c5u5F1LyL9JsFbXfjy9czmJUdA2ykioT-vnQm2T2-FsLoh4NyDOZlX3gum6OBrIuT8_JDEUmq5ao6M1ABVM7wMFGqxyRqB2PMxmtbF2G_meoOu2Ew7TNwz1xZ-WpPn0rNDXmShwLNb4ELAaW6YohCZ4suqo8QVRikjQOXWJgXCc1CoFBCEDnaoy3IA9NV_M86PvG18KxkZfeytM7pHsdyr8Tr7eTp8VS2ahqJAxmxXEEm1LiJT" alt="User profile photo">
+        </div>
+        <h2 class="class_oneonn_profile_name">Aarav Sharma</h2>
+        <p class="class_oneonn_profile_phone">+91 9876543210</p>
+      </div>
+
+      <!-- Profile Info -->
+      <div class="class_oneonn_profile_info">
+        <label for="id_oneonn_profile_name">Name</label>
+        <input id="id_oneonn_profile_name" type="text" value="Aarav Sharma" disabled>
+
+        <label for="id_oneonn_profile_email">Email</label>
+        <input id="id_oneonn_profile_email" type="email" value="aarav.sharma@example.com" disabled>
+
+        <label for="id_oneonn_profile_emergency">Emergency Contact</label>
+        <input id="id_oneonn_profile_emergency" type="tel" value="+91 1234567890" disabled>
+      </div>
+
+      <!-- Buttons -->
+      <div class="class_oneonn_profile_buttons">
+        <button id="id_oneonn_profile_editBtn" class="class_oneonn_profile_btn accent">
+          <span class="material-symbols-outlined">edit</span>
+          <span>Edit Profile</span>
+        </button>
+
+        <button id="id_oneonn_profile_logoutBtn" class="class_oneonn_profile_btn primary">
+          <span class="material-symbols-outlined">logout</span>
+          <span>Logout</span>
+        </button>
+      </div>
+
+      <!-- Footer Links -->
+      <footer class="class_oneonn_profile_footer">
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="class_oneonn_profile_bottomnav">
+      <a href="home.html" class="class_oneonn_profile_navlink">
+        <span class="material-symbols-outlined">home</span>
+        <p>Home</p>
+      </a>
+      <a href="activity.html" class="class_oneonn_profile_navlink">
+        <span class="material-symbols-outlined">receipt_long</span>
+        <p>Activity</p>
+      </a>
+      <a href="profile.html" class="class_oneonn_profile_navlink active">
+        <span class="material-symbols-outlined">person</span>
+        <p>Profile</p>
+      </a>
+    </nav>
+  </div>
+
+  <script src="script/profile.js"></script>
+</body>
+</html>

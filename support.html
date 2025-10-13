@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Help & Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/support.css">
+</head>
+
+<body class="class_oneonn_support_body">
+  <div class="class_oneonn_support_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_support_header">
+      <button id="id_oneonn_support_backBtn" class="class_oneonn_support_backbtn">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <h1 class="class_oneonn_support_title">Help & Support</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="class_oneonn_support_main">
+      <!-- Contact Form -->
+      <section class="class_oneonn_support_section">
+        <h2 class="class_oneonn_support_heading">Contact Us</h2>
+        <form id="id_oneonn_support_form" class="class_oneonn_support_form">
+          <label for="id_oneonn_support_name">Your Name</label>
+          <input id="id_oneonn_support_name" type="text" placeholder="Enter your name" required>
+
+          <label for="id_oneonn_support_email">Email</label>
+          <input id="id_oneonn_support_email" type="email" placeholder="Enter your email" required>
+
+          <label for="id_oneonn_support_message">Message</label>
+          <textarea id="id_oneonn_support_message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <button type="submit" class="class_oneonn_support_submitbtn">Submit</button>
+        </form>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="class_oneonn_support_section">
+        <h2 class="class_oneonn_support_heading">Frequently Asked Questions</h2>
+        <div class="class_oneonn_support_faq">
+
+          <details>
+            <summary>How do I book a ride?</summary>
+            <p>You can book directly from the home screen. Enter your destination, choose your vehicle, and confirm your booking.</p>
+          </details>
+
+          <details>
+            <summary>What are the rental charges?</summary>
+            <p>Charges depend on vehicle type and duration. You’ll always see the estimated fare before confirming your booking.</p>
+          </details>
+
+          <details>
+            <summary>How do I cancel my booking?</summary>
+            <p>Go to “Your Rides,” select the booking, and tap “Cancel Ride.” Cancellation fees may apply based on timing.</p>
+          </details>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script/support.js"></script>
+</body>
+</html>

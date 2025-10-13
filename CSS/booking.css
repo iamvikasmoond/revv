@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.class_oneonn_booking_body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.class_oneonn_booking_app {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f5;
+}
+
+/* Header */
+.class_oneonn_booking_header {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.class_oneonn_booking_backbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.class_oneonn_booking_backbtn span {
+  font-size: 20px;
+  color: #000;
+}
+
+.class_oneonn_booking_title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Main Sections */
+.class_oneonn_booking_main {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.class_oneonn_booking_section {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.class_oneonn_booking_heading {
+  color: #C5A44D;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.class_oneonn_booking_location,
+.class_oneonn_booking_detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.class_oneonn_booking_iconbox {
+  background: rgba(255, 211, 0, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.class_oneonn_booking_iconbox span {
+  color: #C5A44D;
+}
+
+.class_oneonn_booking_label {
+  color: #777;
+  font-size: 13px;
+}
+
+.class_oneonn_booking_text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.class_oneonn_booking_line {
+  height: 24px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #FFD300,
+    #FFD300 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin: 8px 0 8px 19px;
+}
+
+/* Vehicle */
+.class_oneonn_booking_vehicle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.class_oneonn_booking_img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.class_oneonn_booking_vehicleName {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Payment Buttons */
+.class_oneonn_booking_payments {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.class_oneonn_booking_paybtn {
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: 2px solid #C5A44D;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #C5A44D;
+  transition: 0.3s;
+}
+
+.class_oneonn_booking_paybtn.active {
+  background: #FFD300;
+  color: #000;
+  border-color: #FFD300;
+}
+
+.class_oneonn_booking_paybtn.disabled {
+  background: #eee;
+  color: #aaa;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.class_oneonn_booking_footer {
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+.class_oneonn_booking_fare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.class_oneonn_booking_fare p {
+  color: #666;
+  font-size: 14px;
+}
+
+.class_oneonn_booking_fare h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.class_oneonn_booking_confirmbtn {
+  width: 100%;
+  background: #FFD300;
+  color: #000;
+  font-weight: 700;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(255, 211, 0, 0.4);
+}
+
+.class_oneonn_booking_confirmbtn:hover {
+  background: #f0c800;
+}

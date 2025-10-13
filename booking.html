@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Booking Confirmation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body class="class_oneonn_booking_body">
+  <div class="class_oneonn_booking_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_booking_header">
+      <button id="id_oneonn_booking_backBtn" class="class_oneonn_booking_backbtn">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <h1 class="class_oneonn_booking_title">Booking Confirmation</h1>
+    </header>
+
+    <!-- Main -->
+    <main class="class_oneonn_booking_main">
+      <!-- Pickup & Drop -->
+      <section class="class_oneonn_booking_section">
+        <h2 class="class_oneonn_booking_heading">Pickup & Drop</h2>
+        <div class="class_oneonn_booking_location">
+          <div class="class_oneonn_booking_iconbox">
+            <span class="material-symbols-outlined">pin_drop</span>
+          </div>
+          <div>
+            <p class="class_oneonn_booking_label">Pickup</p>
+            <p class="class_oneonn_booking_text">CURAJ University</p>
+          </div>
+        </div>
+
+        <div class="class_oneonn_booking_line"></div>
+
+        <div class="class_oneonn_booking_location">
+          <div class="class_oneonn_booking_iconbox">
+            <span class="material-symbols-outlined">pin_drop</span>
+          </div>
+          <div>
+            <p class="class_oneonn_booking_label">Drop</p>
+            <p class="class_oneonn_booking_text">Rev Ride Office</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Date & Time -->
+      <section class="class_oneonn_booking_section">
+        <h2 class="class_oneonn_booking_heading">Date & Time</h2>
+        <div class="class_oneonn_booking_detail">
+          <div class="class_oneonn_booking_iconbox">
+            <span class="material-symbols-outlined">calendar_today</span>
+          </div>
+          <p class="class_oneonn_booking_text">July 26, 2024, 10:00 AM</p>
+        </div>
+      </section>
+
+      <!-- Vehicle -->
+      <section class="class_oneonn_booking_section">
+        <h2 class="class_oneonn_booking_heading">Vehicle</h2>
+        <div class="class_oneonn_booking_vehicle">
+          <div class="class_oneonn_booking_img"
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVoU9CqfaTpL3SZPoAc3XH5ETfkLtYl42vA4dz3HwQK9byYJ8hMngzdo2oVftrQ2NkdqpzXMXcMhHqEATJOVHFP2KVrdQplubVJhpsuAfpg_tJ15MUkSRebK68fIBg5I94e0iHZR8uJi1XjwRNmpDSADa2X_vt3uqeW9Y43XKAm6yn0QKguAIeiM_ZS5TBZq1nmgCa-t9WptqIn0jl21UQRMluMhx0aLNhFb-k2CpwKv-keEsTzExvf7y6vH7lyyGwVIux-lBqnFdj');"></div>
+          <div>
+            <p class="class_oneonn_booking_label">Selected</p>
+            <p class="class_oneonn_booking_vehicleName">Yamaha MT-15</p>
+            <p class="class_oneonn_booking_label">Model 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payment Options -->
+      <section class="class_oneonn_booking_section">
+        <h2 class="class_oneonn_booking_heading">Payment Options</h2>
+        <div class="class_oneonn_booking_payments">
+          <button class="class_oneonn_booking_paybtn disabled">Cash</button>
+          <button class="class_oneonn_booking_paybtn active">UPI</button>
+          <button class="class_oneonn_booking_paybtn">Card</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="class_oneonn_booking_footer">
+      <div class="class_oneonn_booking_fare">
+        <p>Estimated Fare</p>
+        <h3>₹ 1,200</h3>
+      </div>
+      <button id="id_oneonn_booking_confirmBtn" class="class_oneonn_booking_confirmbtn">Confirm Booking</button>
+    </footer>
+  </div>
+
+  <script src="script/booking.js"></script>
+</body>
+</html>

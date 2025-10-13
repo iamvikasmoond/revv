@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.class_oneonn_otp_container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.class_oneonn_otp_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.class_oneonn_otp_subtext {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.class_oneonn_otp_inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.class_oneonn_otp_input {
+  width: 48px;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #f9f9f9;
+  outline: none;
+  transition: 0.3s;
+}
+
+.class_oneonn_otp_input:focus {
+  border-color: #f9d342;
+  box-shadow: 0 0 10px #f9d34260;
+}
+
+.class_oneonn_otp_btn {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px;
+  background-color: #f9d342;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.class_oneonn_otp_btn:hover {
+  background-color: #ffdc52;
+  box-shadow: 0 0 10px #f9d34290;
+}
+
+.class_oneonn_otp_resend {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #b38b00;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.class_oneonn_otp_resend:hover {
+  color: #000;
+}

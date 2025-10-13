@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #000;
+}
+
+.class_oneonn_terms_container {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  text-align: left;
+}
+
+.class_oneonn_terms_title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.class_oneonn_terms_content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 60vh;
+  border: 1px solid #eee;
+}
+
+.class_oneonn_terms_heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.class_oneonn_terms_text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.class_oneonn_terms_list {
+  list-style: decimal;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.class_oneonn_terms_list li {
+  margin-bottom: 10px;
+}
+
+.class_oneonn_terms_btn {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 14px;
+  background-color: #f9d342;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.class_oneonn_terms_btn:hover {
+  background-color: #ffdc52;
+  box-shadow: 0 0 10px #f9d34290;
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.class_oneonn_home_body {
+  font-family: 'Manrope', sans-serif;
+  background: #f8f8f5;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.class_oneonn_home_app {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.class_oneonn_home_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.class_oneonn_home_userinfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.class_oneonn_home_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.class_oneonn_home_icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.class_oneonn_home_iconbtn {
+  border: none;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.class_oneonn_home_notifDot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: #FFD300;
+  border-radius: 50%;
+}
+
+/* Location */
+.class_oneonn_home_location {
+  padding: 0 16px;
+  margin-bottom: 12px;
+}
+
+.class_oneonn_home_label {
+  font-size: 13px;
+  color: #777;
+}
+
+.class_oneonn_home_place {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Vehicle Switch */
+.class_oneonn_home_switch {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 16px 20px;
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.class_oneonn_home_switch button {
+  flex: 1;
+  border: none;
+  background: none;
+  padding: 10px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  color: #555;
+}
+
+.class_oneonn_home_switch button.active {
+  background: #FFD300;
+  color: #000;
+}
+
+/* Cards */
+.class_oneonn_home_main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+.class_oneonn_home_card {
+  background: #f9f9f9;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #eee;
+}
+
+.class_oneonn_home_card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.class_oneonn_home_cardinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class_oneonn_home_cardtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.class_oneonn_home_status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.class_oneonn_home_status.available {
+  color: #16a34a;
+}
+
+.class_oneonn_home_status.waiting {
+  color: #C5A44D;
+}
+
+/* Buttons */
+.class_oneonn_home_bookbtn {
+  background: #FFD300;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.class_oneonn_home_bookbtn.disabled {
+  background: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.class_oneonn_home_footer {
+  padding: 12px 16px;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  position: sticky;
+  bottom: 0;
+}
+
+.class_oneonn_home_activeRide {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.class_oneonn_home_activeRide p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.class_oneonn_home_activeRide h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.class_oneonn_home_ongoing {
+  color: #FFD300;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Bottom Nav */
+.class_oneonn_home_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.class_oneonn_home_nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #777;
+  transition: 0.3s;
+}
+
+.class_oneonn_home_nav a.active,
+.class_oneonn_home_nav a:hover {
+  color: #FFD300;
+  font-weight: 700;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;
+}

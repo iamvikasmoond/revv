@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.class_oneonn_activity_body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #f8f8f5;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* App container simulating phone width */
+.class_oneonn_activity_app {
+  background-color: #f8f8f5;
+  width: 100%;
+  max-width: 430px; /* mobile feel */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 75px; /* space for nav */
+}
+
+/* Header */
+.class_oneonn_activity_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #f8f8f5;
+  position: sticky;
+  top: 0;
+}
+
+.class_oneonn_activity_title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.class_oneonn_activity_icons {
+  display: flex;
+  gap: 8px;
+}
+
+.class_oneonn_activity_iconbtn {
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.class_oneonn_activity_iconbtn:hover {
+  background-color: rgba(255, 211, 0, 0.2);
+}
+
+.class_oneonn_activity_dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #FFD300;
+  border-radius: 50%;
+}
+
+/* Sections */
+.class_oneonn_activity_section {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.class_oneonn_activity_subtitle {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.class_oneonn_activity_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Ride Cards */
+.class_oneonn_activity_card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class_oneonn_activity_card .info p:first-child {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.class_oneonn_activity_card .info p:last-child {
+  color: #666;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.status {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.status.ongoing { color: #FFD300; }
+.status.completed { color: #25A244; }
+.status.cancelled { color: #E63946; }
+
+/* Bottom Navigation */
+.class_oneonn_activity_bottomnav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.class_oneonn_activity_navlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #777;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.class_oneonn_activity_navlink.active,
+.class_oneonn_activity_navlink:hover {
+  color: #FFD300;
+  font-weight: 700;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+  font-size: 22px;
+  margin-bottom: 2px;
+}

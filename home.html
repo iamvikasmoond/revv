@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="class_oneonn_home_body">
+  <div class="class_oneonn_home_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_home_header">
+      <div class="class_oneonn_home_userinfo">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDllJeqKVG6vS9eGCkvTQM8X6Rr2ODQtZXmQFnfUza_ZbOglpsuQR92ow84QRMDI-LGwjpQFC2aK9mxRhCYbrk0WNYL8UabDtHLVXLtfUuYqG7xcTmcgNsyNKE_bE0ZroOehgL3rSzm6b1Zoii_0AOOJYEdqgUmNNExPU7-Wflaqh8JZGleIXnhKGrhoMf1HYEKV5RiXZzy6NeSNZP0zx0HfbKS5km8cVHRO9E56RUxHQgd0R24qBR2btJ1B8Dy5yVggy0qajMwjtAM" 
+             alt="User Profile" class="class_oneonn_home_avatar">
+        <h1>Hi, Alex</h1>
+      </div>
+
+      <div class="class_oneonn_home_icons">
+        <button class="class_oneonn_home_iconbtn" id="id_oneonn_home_helpBtn">
+          <span class="material-symbols-outlined">help_outline</span>
+        </button>
+        <button class="class_oneonn_home_iconbtn" id="id_oneonn_home_notifyBtn">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="class_oneonn_home_notifDot"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Location -->
+    <div class="class_oneonn_home_location">
+      <p class="class_oneonn_home_label">Location</p>
+      <h2 class="class_oneonn_home_place">Office near CURAJ Uni</h2>
+    </div>
+
+    <!-- Vehicle Type Switch -->
+    <div class="class_oneonn_home_switch">
+      <button class="active" id="id_oneonn_home_bikeBtn">Bike</button>
+      <button id="id_oneonn_home_carBtn">Car</button>
+    </div>
+
+    <!-- Vehicle Cards -->
+    <main class="class_oneonn_home_main">
+      <div class="class_oneonn_home_card">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdcpboJRt9QhlUXBI9cw7TQ6QtkzYxUs3f4yTBGCczAiQgXxLdzA6WMR2Idi1TtCLTux3A6HG_MGaouqmX1FnLyLqVnvKG9HvzcjYs-naNBemet-GwWj7n_puJrhJDrZts4qKWTRLw522RVPy2wq59y6pLCMh8YxGKlVL_C-hFXksUHglNXLV58qWh0TT-zkq_AEkex8yKkU99vg1TodpuDfI8UZuH3cVNb6ZME6Y_eiu7k0iPxImRIDV11AfojC8l78nf4g73xQDI"
+             alt="Honda Activa">
+        <div class="class_oneonn_home_cardinfo">
+          <div>
+            <p class="class_oneonn_home_cardtitle">Honda Activa</p>
+            <p class="class_oneonn_home_status available">
+              <span class="material-symbols-outlined">check_circle</span>
+              Available Now
+            </p>
+          </div>
+          <button class="class_oneonn_home_bookbtn">Book Now</button>
+        </div>
+      </div>
+
+      <div class="class_oneonn_home_card">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rv7MQWYt15Iw_iD7yRbqAnhsKVtWqVw7T4dLdWo31MSijppjHBs2G8hlyrSqpVQNFy6Tyai0SREG7OnG8BDz7aJfhfzwhb6hA_AcrLLP99v9TL9BztYiiWwoI_0yvvh18eERtB0E7ag1eHdiXdqVU2OYSMBER6f8CKYxeo0Jz2k-3YfAXmhmszd9qQ1uCGP2qShIWTYkSF17xjrMToK96MkA7oP0jHigaTwCGgNhBJGDvBaDoGD1B7yMpEd7ylwMqXYjkd1UZa55"
+             alt="Royal Enfield">
+        <div class="class_oneonn_home_cardinfo">
+          <div>
+            <p class="class_oneonn_home_cardtitle">Royal Enfield</p>
+            <p class="class_oneonn_home_status waiting">
+              <span class="material-symbols-outlined">hourglass_empty</span>
+              Available in 23 hours
+            </p>
+          </div>
+          <button class="class_oneonn_home_bookbtn disabled" disabled>Book Now</button>
+        </div>
+      </div>
+
+      <div class="class_oneonn_home_card">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGwP4FqOhR-etnIl8QbYTzs6RqxH8UVePHvFD8ekN0APIMqkNMorjxEqo0uTI-_giU1FF_xcm-HTvnnFST6CHFuxkSNs6cNfhQ8rt08cwQ1Asc5LPbfvAIE1TFh6I09KGxzhq3gb_UuM3D8aySHg2b0F4SVG6xYY5Tdykryri8JHMyrcToT9ptsoefLOXwgX-AGirpnyh9u24zg3NuUtE8IJgXmjkXxv4XMiRSvASd15LsV4EQflzrh-HGAv_IrmIoLBp12lyF9V2s"
+             alt="TVS Jupiter">
+        <div class="class_oneonn_home_cardinfo">
+          <div>
+            <p class="class_oneonn_home_cardtitle">TVS Jupiter</p>
+            <p class="class_oneonn_home_status available">
+              <span class="material-symbols-outlined">check_circle</span>
+              Available Now
+            </p>
+          </div>
+          <button class="class_oneonn_home_bookbtn">Book Now</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Section -->
+    <footer class="class_oneonn_home_footer">
+      <div class="class_oneonn_home_activeRide">
+        <p>Active Booking</p>
+        <h3>Royal Enfield - 3:00 PM</h3>
+        <span class="class_oneonn_home_ongoing">ONGOING</span>
+      </div>
+
+      <nav class="class_oneonn_home_nav">
+        <a href="#" class="active">
+          <span class="material-symbols-outlined">home</span>
+          <p>Home</p>
+        </a>
+        <a href="activity.html">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <p>Activity</p>
+        </a>
+        <a href="profile.html">
+          <span class="material-symbols-outlined">person</span>
+          <p>Profile</p>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script/home.js"></script>
+</body>
+</html>

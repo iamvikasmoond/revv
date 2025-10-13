@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Ride - Notifications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/notification.css">
+</head>
+
+<body class="class_oneonn_notify_body">
+  <div class="class_oneonn_notify_app">
+
+    <!-- Header -->
+    <header class="class_oneonn_notify_header">
+      <button id="id_oneonn_notify_backBtn" class="class_oneonn_notify_backbtn">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </button>
+      <h1 class="class_oneonn_notify_title">Notifications</h1>
+    </header>
+
+    <!-- Notifications List -->
+    <main class="class_oneonn_notify_main">
+      <div class="class_oneonn_notify_card new">
+        <div class="class_oneonn_notify_dot"></div>
+        <div class="class_oneonn_notify_info">
+          <p class="class_oneonn_notify_titleText">Ride Confirmed!</p>
+          <p class="class_oneonn_notify_msg">
+            Your ride to the university main gate is confirmed. Your driver will arrive in 5 minutes.
+          </p>
+          <p class="class_oneonn_notify_time">Just now</p>
+        </div>
+      </div>
+
+      <div class="class_oneonn_notify_card new">
+        <div class="class_oneonn_notify_dot"></div>
+        <div class="class_oneonn_notify_info">
+          <p class="class_oneonn_notify_titleText">Your OTP is 1234</p>
+          <p class="class_oneonn_notify_msg">
+            Share this OTP with your driver to start the ride.
+          </p>
+          <p class="class_oneonn_notify_time">2 minutes ago</p>
+        </div>
+      </div>
+
+      <div class="class_oneonn_notify_card old">
+        <div class="class_oneonn_notify_dot transparent"></div>
+        <div class="class_oneonn_notify_info">
+          <p class="class_oneonn_notify_titleText">Ride Completed</p>
+          <p class="class_oneonn_notify_msg">
+            Your ride from the hostel to the library has been completed. Hope you enjoyed it!
+          </p>
+          <p class="class_oneonn_notify_time">1 hour ago</p>
+        </div>
+      </div>
+
+      <div class="class_oneonn_notify_card old">
+        <div class="class_oneonn_notify_dot transparent"></div>
+        <div class="class_oneonn_notify_info">
+          <p class="class_oneonn_notify_titleText">Payment Successful</p>
+          <p class="class_oneonn_notify_msg">
+            Your payment of ₹50 for the ride has been processed successfully.
+          </p>
+          <p class="class_oneonn_notify_time">Yesterday</p>
+        </div>
+      </div>
+
+      <div class="class_oneonn_notify_card old">
+        <div class="class_oneonn_notify_dot transparent"></div>
+        <div class="class_oneonn_notify_info">
+          <p class="class_oneonn_notify_titleText">New Offer Unlocked!</p>
+          <p class="class_oneonn_notify_msg">
+            Get 20% off on your next 3 rides. Use code: REV20
+          </p>
+          <p class="class_oneonn_notify_time">2 days ago</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script/notification.js"></script>
+</body>
+</html>

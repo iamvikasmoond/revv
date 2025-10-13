@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.chat-box {
+  background: #1a1a1a;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.sparkles {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.chat-box p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#phoneInput {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+#phoneInput:focus {
+  border-color: #f9d342;
+  box-shadow: 0 0 10px #f9d34255;
+}
+
+.cta-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #f9d342;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ffd500;
+  box-shadow: 0 0 12px #f9d34280;
+}
+
+.policy {
+  font-size: 0.8rem;
+  margin-top: 16px;
+  color: #aaa;
+}
+
+.policy a {
+  color: #f9d342;
+  text-decoration: none;
+}
+
+.policy a:hover {
+  text-decoration: underline;
+}
