@@ -1,0 +1,590 @@
+/* ---------------------------------------------------------
+   Revvit Design System – Core Tokens
+--------------------------------------------------------- */
+:root {
+    --color-primary: #ffd700;
+    --color-bg-dark: #121212;
+    --color-bg-light: #eaeaea;
+    --color-text-dark: #eaeaea;
+    --color-text-light: #121212;
+    --color-text-muted: #888888;
+    --color-field-dark: #1f1f1f;
+    --color-field-light: #ffffff;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+    --font-display: "Inter", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body.revvit-body {
+    font-family: var(--font-display);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+  
+  /* ---------------------------------------------------------
+     Layout
+  --------------------------------------------------------- */
+  .auth-container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .auth-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .auth-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+  }
+  
+  .auth-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      var(--color-bg-dark) 60%,
+      rgba(18, 18, 18, 0.8),
+      transparent
+    );
+  }
+  
+  .auth-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* ---------------------------------------------------------
+     Header
+  --------------------------------------------------------- */
+  .auth-header {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .auth-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    letter-spacing: -0.015em;
+  }
+  
+  /* ---------------------------------------------------------
+     Main content
+  --------------------------------------------------------- */
+  .auth-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .auth-headline {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 12px;
+  }
+  
+  .auth-subtext {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+  }
+  
+  /* ---------------------------------------------------------
+     Form fields
+  --------------------------------------------------------- */
+  .auth-form {
+    text-align: left;
+  }
+  
+  .auth-label {
+    display: block;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-field-dark);
+    border-radius: var(--radius-lg);
+    height: 56px;
+    margin-bottom: 24px;
+  }
+  
+  .input-prefix {
+    color: var(--color-text-muted);
+    padding-left: 16px;
+    padding-right: 8px;
+    font-size: 15px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-dark);
+    font-size: 16px;
+    padding-right: 16px;
+    caret-color: var(--color-primary);
+  }
+  
+  .input-group input::placeholder {
+    color: var(--color-text-muted);
+  }
+  
+  /* ---------------------------------------------------------
+     Buttons
+  --------------------------------------------------------- */
+  .btn-primary {
+    width: 100%;
+    height: 56px;
+    background-color: var(--color-primary);
+    color: var(--color-bg-dark);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.97);
+  }
+  
+  /* ---------------------------------------------------------
+     Responsive
+  --------------------------------------------------------- */
+  @media (max-width: 480px) {
+    .auth-container {
+      padding: 16px;
+    }
+    .auth-headline {
+      font-size: 28px;
+    }
+  }
+  
+
+  /* ---------------------------------------------------------
+   OTP Screen
+--------------------------------------------------------- */
+.otp-container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 100dvh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .otp-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .text-highlight {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .otp-inputs input {
+    width: 48px;
+    height: 56px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: var(--radius-lg);
+    border: 2px solid #333;
+    background-color: var(--color-field-dark);
+    color: var(--color-text-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .otp-inputs input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.3);
+  }
+  
+  .otp-helper {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+  }
+  
+  .link-primary {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .link-primary:hover {
+    text-decoration: underline;
+  }
+  
+  /* minor responsiveness */
+  @media (max-width: 480px) {
+    .otp-inputs input {
+      width: 42px;
+      height: 50px;
+    }
+  }
+  
+
+  /* ---------------------------------------------------------
+   Create Profile Screen
+--------------------------------------------------------- */
+
+.profile-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-height: 100dvh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text-dark);
+  }
+  
+  .auth-header-left {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .auth-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+  }
+  
+  .profile-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+  }
+  
+  .profile-form input {
+    width: 100%;
+    height: 56px;
+    background-color: var(--color-field-dark);
+    color: var(--color-text-dark);
+    border: 2px solid transparent;
+    border-radius: var(--radius-lg);
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.2;          /* keeps text vertically centered */
+    box-sizing: border-box;    /* ensures padding doesn’t alter height */
+    display: flex;
+    align-items: center;       /* vertically centers placeholder text */
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .profile-form input::placeholder {
+    color: var(--color-text-muted);
+    opacity: 1;                /* keeps placeholder fully visible */
+    line-height: normal;       /* resets any inherited oddities */
+  }
+  
+  .profile-form input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.3);
+  }
+  
+
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .optional {
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+  
+  .btn-primary {
+    margin-top: 32px;
+  }
+  
+  /* subtle fade on the hero bg */
+  .auth-bg img {
+    opacity: 0.3;
+  }
+  
+  /* responsive tweak */
+  @media (max-width: 480px) {
+    .profile-container {
+      padding: 16px;
+    }
+  }
+  
+
+  
+  /* ---------------------------------------------------------
+   Profile Page – Luxe Refined
+--------------------------------------------------------- */
+
+.profile-container.clean {
+    max-width: 420px;
+    margin: 0 auto;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px 64px; /* bottom padding gives breathing room */
+    color: var(--color-text-dark);
+    overflow-y: auto;         /* allows scroll if card is tall */
+    justify-content: flex-start; /* top-aligns instead of vertical centering */
+    box-sizing: border-box;
+  }
+  
+  
+  .profile-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-avatar {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile-top h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-text-dark);
+  }
+  
+  .profile-top .phone {
+    color: var(--color-text-muted);
+    font-size: 15px;
+  }
+  
+  .profile-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-card label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+  
+  .profile-card input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-dark);
+    font-size: 16px;
+    padding: 8px 0;
+    transition: border-color 0.2s;
+  }
+  
+  .profile-card input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+  
+  .profile-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .btn-gradient {
+    background: linear-gradient(90deg, var(--color-primary), #ffc000);
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .btn-outline {
+    height: 56px;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: var(--color-text-muted);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  
+  .btn-outline:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  
+  @media (max-width: 480px) {
+    .profile-container.clean {
+      padding: 32px 16px;
+    }
+  }
+  
+
+  /* ---------------------------------------------------------
+   Revvit Bottom Navigation – Luxe Version
+--------------------------------------------------------- */
+/* ---------------------------------------------------------
+   Revvit Bottom Navigation – Fixed In-Frame (No Overflow)
+--------------------------------------------------------- */
+
+.revvit-nav {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 420px;
+    width: 100%;
+    padding: 0 20px;
+    height: 64px;
+  
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+  
+    /* Fix overflow bug */
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.25s ease, transform 0.25s ease;
+  }
+  
+  .nav-item span:first-child {
+    font-size: 22px;
+    margin-bottom: 3px;
+    line-height: 1;
+  }
+  
+  .nav-item:hover {
+    color: rgba(255, 255, 255, 0.85);
+    transform: translateY(-2px);
+  }
+  
+  .nav-item.active {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  
+  /* Global safeguard */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
