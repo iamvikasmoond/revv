@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enter OTP | Rev Ride Concierge</title>
-  <link rel="stylesheet" href="css/otp.css">
-</head>
-<body>
-  <div class="class_oneonn_otp_container">
-    <h2 class="class_oneonn_otp_title">Enter OTP</h2>
-    <p class="class_oneonn_otp_subtext">A 6-digit code has been sent to your mobile number.</p>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revvit – OTP Verification</title>
+    <link rel="stylesheet" href="revvit.css" />
+  </head>
 
-    <div class="class_oneonn_otp_inputs">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
-      <input type="text" maxlength="1" class="class_oneonn_otp_input" autocomplete="one-time-code">
+  <body class="revvit-body">
+    <div class="otp-container">
+      <!-- Background -->
+      <div class="auth-bg">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0JBLnL5K0Hrc-OMuSr0uewK7b8TRXNWvWudickAwWfef8hoFHzsYQTfTb8kgp9-aHLpvSEQ_90cChesLaVdxayiff-MEnG8H3hjkfynoR2sXNgUsPSdQsrtyueNzEABxsCBH2ZQBAhTrsbDpYqdK3UA2v7Vqd5GnLD2UVqEPtirt07GzTsDODG7zqz23KpZkWhreaRwIcN8ZTfhDHa47Aqu5dKdfvk8RIw8inM6UQL__xn89xEZ-SotPq4wlQjHy8i-1fJ1zKLQ"
+          alt="Luxury car background"
+        />
+        <div class="auth-bg-overlay"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="auth-content">
+        <header class="auth-header">
+          <h2>Revvit</h2>
+        </header>
+
+        <main class="otp-main">
+          <h1 class="auth-headline">Verification Code</h1>
+          <p class="auth-subtext">
+            Enter the 6-digit code sent to
+            <span class="text-highlight">+91 9876543210</span>
+          </p>
+
+          <!-- OTP inputs -->
+          <form class="otp-form" action="/verify" method="post">
+            <div class="otp-inputs">
+              <input type="text" maxlength="1" inputmode="numeric" />
+              <input type="text" maxlength="1" inputmode="numeric" />
+              <input type="text" maxlength="1" inputmode="numeric" />
+              <input type="text" maxlength="1" inputmode="numeric" />
+              <input type="text" maxlength="1" inputmode="numeric" />
+              <input type="text" maxlength="1" inputmode="numeric" />
+            </div>
+
+            <p class="otp-helper">
+              Didn’t receive a code?
+              <a href="#" class="link-primary">Resend OTP</a>
+            </p>
+
+            <button type="submit" class="btn-primary">Verify &amp; Proceed</button>
+          </form>
+        </main>
+      </div>
     </div>
-
-    <button id="id_oneonn_otp_verifyBtn" class="class_oneonn_otp_btn">Verify</button>
-
-    <p id="id_oneonn_otp_resend" class="class_oneonn_otp_resend">Resend OTP</p>
-  </div>
-
-  <script src="script/otp.js"></script>
-</body>
+  </body>
 </html>
