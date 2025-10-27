@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Rev Ride Concierge</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1 class="logo">Rev Ride Concierge</h1>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revvit – Authentication</title>
+    <link rel="stylesheet" href="revvit.css" />
+  </head>
 
-    <div class="chat-box">
-      <span class="sparkles">✨✨</span>
-      <p>Hello there! I’m your Rev Ride Concierge. To get started, could you please share your mobile number?</p>
+  <body class="revvit-body">
+    <div class="auth-container">
+      <!-- Background -->
+      <div class="auth-bg">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0JBLnL5K0Hrc-OMuSr0uewK7b8TRXNWvWudickAwWfef8hoFHzsYQTfTb8kgp9-aHLpvSEQ_90cChesLaVdxayiff-MEnG8H3hjkfynoR2sXNgUsPSdQsrtyueNzEABxsCBH2ZQBAhTrsbDpYqdK3UA2v7Vqd5GnLD2UVqEPtirt07GzTsDODG7zqz23KpZkWhreaRwIcN8ZTfhDHa47Aqu5dKdfvk8RIw8inM6UQL__xn89xEZ-SotPq4wlQjHy8i-1fJ1zKLQ"
+          alt="Luxury car background"
+        />
+        <div class="auth-bg-overlay"></div>
+      </div>
+
+      <!-- Main content -->
+      <div class="auth-content">
+        <header class="auth-header">
+          <h2>Revvit</h2>
+        </header>
+
+        <main class="auth-main">
+          <h1 class="auth-headline">Unlock Your Drive</h1>
+          <p class="auth-subtext">
+            Enter your mobile number to sign in or create an account.
+          </p>
+
+          <form class="auth-form" method="post" action="/otp">
+            <label for="mobile" class="auth-label">Mobile Number</label>
+            <div class="input-group">
+              <span class="input-prefix">+91</span>
+              <input
+                id="mobile"
+                name="mobile"
+                type="tel"
+                placeholder="(555) 000-0000"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-primary">Continue</button>
+          </form>
+        </main>
+      </div>
     </div>
-
-    <form id="loginForm">
-      <input type="tel" id="phoneInput" placeholder="Enter your mobile number" required maxlength="10" pattern="[0-9]{10}">
-      <button type="submit" class="cta-btn">Confirm & Proceed</button>
-    </form>
-
-    <p class="policy">
-      By continuing, you agree to our 
-      <a href="#">Terms of Use</a> and 
-      <a href="#">Privacy Policy</a>.
-    </p>
-  </div>
-
-  <script src="SCRIPT/scripts.js"></script>
-</body>
+  </body>
 </html>
